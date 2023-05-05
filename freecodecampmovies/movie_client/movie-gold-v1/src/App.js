@@ -31,7 +31,7 @@ function App() {
       setMovie(singleMovie)
       setReviews(singleMovie.setReviews);
     } catch(err) {
-
+      console.log(err)
     }
   }
 
@@ -49,7 +49,6 @@ function App() {
           <Route path="/Reviews/:movieId" element={<Reviews getMovieData={getMovieData} movie={movie} reviews={reviews} setReviews={setReviews} />}></Route>
         </Route>
       </Routes>
-
     </div>
   );
 }
